@@ -1,0 +1,38 @@
+@page
+@model MyApp.Namespace.InventoryPageModel
+@{
+    ViewData["Title"] = "Inventory Page";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.InventoryItems != null && Model.InventoryItems.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Is Complete</th>
+                <th>Due Date</th>
+                <th>Order ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.InventoryItems)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.ProductName</td>
+                    <td>@product.IsComplete</td>
+                    <td>@product.Duedate</td>
+                    <td>@product.OrderId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No items in the inventory.</p>
+}

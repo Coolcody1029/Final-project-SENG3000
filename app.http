@@ -1,0 +1,17 @@
+@WebApiHost = https://localhost:7231
+
+@Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2wiOlsiQWRtaW4iXSwiZW1haWwiOiJDb29sY29keTE3MUBnbWFpbC5jb20iLCJuYmYiOjE2OTk0MDY4MjYsImV4cCI6MTcwMTk5ODgyNiwiaWF0IjoxNjk5NDA2ODI2LCJpc3MiOiJodHRwOi8vd3d3LmVjdS5lZHUiLCJhdWQiOiJodHRwOi8vd3d3LmVjdS5lZHUifQ.PDx5qnuOxrugBgLT2YlxfDb3Xx5gYCPEsePaG3EUE1E
+
+POST {{WebApiHost}}/api/token/authenticate
+Content-Type: application/json
+
+{
+    "email": "Coolcody171@gmail.com",
+    "password": "password"
+}
+
+
+
+###
+GET {{WebApiHost}}/WeatherForecast
+

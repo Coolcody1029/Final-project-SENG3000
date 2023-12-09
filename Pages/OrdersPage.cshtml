@@ -1,0 +1,36 @@
+@page
+@model MyApp.Namespace.OrderPageModel
+@{
+    ViewData["Title"] = "Order Page";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.Orders != null && Model.Orders.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Name</th>
+                <th>Is Completed</th>
+                <th>Order Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.OrderName</td>
+                    <td>@order.Iscompleted</td>
+                    <td>@order.OrderDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No orders available.</p>
+}

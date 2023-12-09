@@ -1,0 +1,16 @@
+﻿@page
+@model MyApp.Namespace.NewPageModel
+@{
+<h2>Login</h2>
+
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" asp-for="Input.Username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" asp-for="Input.Password" required>
+
+    <button type="submit">Login</button>
+</form>
+    
+}
