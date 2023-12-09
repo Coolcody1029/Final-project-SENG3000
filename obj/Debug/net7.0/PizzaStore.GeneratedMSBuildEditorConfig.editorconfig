@@ -9,25 +9,27 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PizzaStore
 build_property.RootNamespace = PizzaStore
-build_property.ProjectDir = c:\Users\major\Downloads\SENG 3000\PizzaStore\
+build_property.ProjectDir = /Users/saddhat/Desktop/Final/Final-project-SENG3000/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\major\Downloads\SENG 3000\PizzaStore
+build_property.MSBuildProjectDirectory = /Users/saddhat/Desktop/Final/Final-project-SENG3000
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/major/Downloads/SENG 3000/PizzaStore/Pages/CustomersPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzUGFnZS5jc2h0bWw=
+[/Users/saddhat/Desktop/Final/Final-project-SENG3000/Pages/CustomersPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VzdG9tZXJzUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/major/Downloads/SENG 3000/PizzaStore/Pages/InventoryPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5UGFnZS5jc2h0bWw=
+[/Users/saddhat/Desktop/Final/Final-project-SENG3000/Pages/InventoryPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW52ZW50b3J5UGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/major/Downloads/SENG 3000/PizzaStore/Pages/LoginPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlLmNzaHRtbA==
+[/Users/saddhat/Desktop/Final/Final-project-SENG3000/Pages/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW5QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/major/Downloads/SENG 3000/PizzaStore/Pages/OrdersPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzUGFnZS5jc2h0bWw=
+[/Users/saddhat/Desktop/Final/Final-project-SENG3000/Pages/OrdersPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

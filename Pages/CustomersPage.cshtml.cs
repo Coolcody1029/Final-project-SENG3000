@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace MyApp.Namespace
 {
     public class CustomerPageModel : PageModel
@@ -23,7 +24,12 @@ namespace MyApp.Namespace
         public void OnGet()
         {
             
-            Customers = _context.Customers.ToList();
+            Customers = _context.Set<Customer>().ToList();
+
+            foreach (var customer in Customers)
+            {
+                Console.WriteLine($"Customer ID: {customer.CustomerId}, Name: {customer.FirstName} {customer.LastName}");
+            }
         }
     }
 }
