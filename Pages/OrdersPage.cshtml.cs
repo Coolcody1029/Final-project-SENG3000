@@ -13,7 +13,7 @@ namespace MyApp.Namespace
     public class OrderPageModel : PageModel
     {
         private readonly dbContext _context; 
-        
+     
         public OrderPageModel(dbContext context)
         {
             _context = context;
