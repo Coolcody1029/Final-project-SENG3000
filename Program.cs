@@ -39,6 +39,8 @@ builder.Services.AddCors( policy =>
         });
 });
 
+builder.Services.AddRazorPages();
+
 
 #region JWT Validation
 /*******************************************
@@ -98,9 +100,11 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("AdminOnly", policy => policy.RequireClaim("rols", "Admin"));
-    options.AddPolicy("Authenticated", policy => policy.RequireClaim("rols", "User", "Admin"));
+    options.AddPolicy("AdminOnly", policy => policy.RequireClaim("roles", "Admin"));
+    options.AddPolicy("Authenticated", policy => policy.RequireClaim("roles", "User", "Admin"));
 });
+
+
 
 var app = builder.Build();
 
@@ -126,8 +130,19 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("pizzastore-allowall");
+
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapControllers();
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapRazorPages();
+});
 
 app.MapControllers();
 

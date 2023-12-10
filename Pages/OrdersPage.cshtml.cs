@@ -12,7 +12,7 @@ namespace MyApp.Namespace
     public class OrderPageModel : PageModel
     {
         private readonly DbContext _context; 
-
+        
         public OrderPageModel(DbContext context)
         {
             _context = context;
@@ -23,7 +23,7 @@ namespace MyApp.Namespace
         public void OnGet()
         {
             
-            Orders = _context.Order.ToList();
+            Orders = _context.Set<Order>().ToList();
         }
 
     }
