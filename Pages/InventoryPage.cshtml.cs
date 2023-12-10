@@ -6,14 +6,15 @@ using PizzaStore.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using dbContext = PizzaStore.Data.dbContext;
 
 namespace MyApp.Namespace
 {
     public class InventoryPageModel : PageModel
     {
-        private readonly DbContext _context;
+        private readonly dbContext _context;
 
-        public InventoryPageModel(DbContext context)
+        public InventoryPageModel(dbContext context)
         {
             _context = context;
         }
