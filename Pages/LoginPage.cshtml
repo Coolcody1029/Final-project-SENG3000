@@ -12,5 +12,30 @@
 
     <button type="submit">Login</button>
 </form>
-    
+  // Attempted to utilize authentication endpoint.
+   <script>
+        async function authenticate() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/api/token/authenticate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    Email: username,
+                    Password: password,
+                }),
+            });
+
+            if (response.ok) {
+                const token = await response.text();
+                console.log('Token:', token);
+                window.location.href = '/dashboard';
+            } else {
+                console.error('Authentication failed');
+            }
+        }
+    </script>
 }
